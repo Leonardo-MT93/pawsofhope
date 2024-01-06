@@ -1,5 +1,6 @@
 import CarouselHomepage from "@/components/CarouselHomepage";
 import FeaturedContent from "@/components/FeaturedContent";
+import Notices from "@/components/Notices";
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
       </head> */}
       <main className="flex items-center flex-col text-dark w-full min-h-screen border border-red-500">
         <CarouselHomepage/>
-        <FeaturedContent/>
+        {/* <FeaturedContent/> */}
+        <Notices/>
       </main>
     </>
   );
