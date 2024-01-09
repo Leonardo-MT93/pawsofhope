@@ -5,14 +5,14 @@ import  photo3  from '../images/featuredsection3.jpg'
 const NoticeCard = () => {
     return (
       <div className="flex  flex-col  gap-4">
-          <div className='flex flex-col md:flex-row  gap-4 border border-black' >
+          <div className='flex flex-col md:flex-row  gap-4 ' >
             <img
               src={photo1}
               alt="planet-01"
               className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
             />
             <div className="w-full flex justify-between items-center">
-              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
+              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px] justify-between items-center">
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>
@@ -22,14 +22,14 @@ const NoticeCard = () => {
               </div>
             </div>
           </div> 
-          <div className='flex md:flex-row flex-col gap-4 border border-black'>
+          <div className='flex md:flex-row flex-col gap-4 '>
             <img
               src={photo2}
               alt="planet-01"
               className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
             />
             <div className="w-full flex justify-between items-center">
-              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
+              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px] justify-between items-center">
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>
@@ -39,14 +39,14 @@ const NoticeCard = () => {
               </div>
             </div>
           </div>
-          <div className='flex md:flex-row flex-col gap-4 border border-black'>
+          <div className='flex md:flex-row flex-col gap-4 '>
             <img
               src={photo3}
               alt="planet-01"
               className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
             />
             <div className="w-full flex justify-between items-center">
-              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
+              <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px] justify-between items-center">
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>

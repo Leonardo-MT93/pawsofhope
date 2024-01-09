@@ -11,12 +11,12 @@ import  carousel3  from '../images/carouselimage3.jpg'
 const CarouselHomepage = () => {
   return (
     <div className="w-full flex justify-center">
-          <Carousel className="max-w-screen-xl">
+          <Carousel className="w-full">
             <CarouselContent>
             <CarouselItem >
-                  <div className="w-full border border-red-100">
-                    <Card>
-                      <CardContent className="flex md:h-[75vh] items-center justify-center">
+                  <div className="w-full border ">
+                    <Card >
+                      <CardContent className="flex md:h-[75vh] items-center justify-center px-0 py-0">
                         <span className="text-4xl font-semibold">
                           <img src={carousel1} alt="." className="w-full h-full"/>
                         </span>
@@ -25,9 +25,9 @@ const CarouselHomepage = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem >
-                  <div className="w-full border border-red-100">
+                  <div className="w-full border">
                     <Card>
-                      <CardContent className="flex md:h-[75vh] items-center justify-center">
+                      <CardContent className="flex md:h-[75vh] items-center justify-center px-0 py-0">
                         <span className="text-4xl font-semibold">
                           <img src={carousel2} alt="." className="w-full h-full"/>
                         </span>
@@ -36,9 +36,9 @@ const CarouselHomepage = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem >
-                  <div className="w-full border border-red-100">
+                  <div className="w-full border">
                     <Card>
-                      <CardContent className="flex md:h-[75vh] items-center justify-center">
+                      <CardContent className="flex md:h-[75vh] items-center justify-center px-0 py-0">
                         <span className="text-4xl font-semibold">
                           <img src={carousel3} alt="." className="w-full h-full"/>
                         </span>

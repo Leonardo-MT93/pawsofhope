@@ -1,5 +1,6 @@
 import CarouselHomepage from "@/components/CarouselHomepage";
-import FeaturedContent from "@/components/FeaturedContent";
+import { Collaborators } from "@/components/Collaborators";
+// import FeaturedContent from "@/components/FeaturedContent";
 import Notices from "@/components/Notices";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <CarouselHomepage/>
         {/* <FeaturedContent/> */}
         <Notices/>
+        <Collaborators/>
       </main>
     </>
   );
