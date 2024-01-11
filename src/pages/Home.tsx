@@ -11,7 +11,7 @@ const Home = () => {
         <meta name="description" content="Homepage de Paws of Hope. Proyecto cuyo fin es el de ayudar a los distintos refugios que ayudan a los animales abandonados." />
         <meta name="author" content="Leonardo Manuel Tolaba"/>
       </head>
-      <main className="flex items-center flex-col text-dark w-full min-h-screen border border-red-500">
+      <main className="flex items-center flex-col text-dark w-full min-h-screen">
         <CarouselHomepage/>
         <Notices/>
         <Collaborators/>

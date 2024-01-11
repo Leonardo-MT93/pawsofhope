@@ -13,6 +13,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        'xs': '475px',
         "2xl": "1400px",
       },
     },
@@ -75,6 +76,11 @@ module.exports = {
         'color-burn': 'color-burn',
       },
     },
+    variants:{
+      extend: {
+        filter: ['responsive', 'hover', 'focus', 'group-hover'],
+      }
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
