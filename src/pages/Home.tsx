@@ -6,14 +6,13 @@ import Notices from "@/components/Notices";
 const Home = () => {
   return (
     <>
-      {/* <head>
+      <head>
         <title>Pawns of Hope</title>
         <meta name="description" content="Homepage de Paws of Hope. Proyecto cuyo fin es el de ayudar a los distintos refugios que ayudan a los animales abandonados." />
         <meta name="author" content="Leonardo Manuel Tolaba"/>
-      </head> */}
+      </head>
       <main className="flex items-center flex-col text-dark w-full min-h-screen border border-red-500">
         <CarouselHomepage/>
-        {/* <FeaturedContent/> */}
         <Notices/>
         <Collaborators/>
       </main>

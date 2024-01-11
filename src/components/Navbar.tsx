@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="flex  flex-wrap place-items-center h-20">
         <section className="relative mx-auto w-full ">
           {/* <!-- navbar --> */}
-          <nav className="flex justify-between h-20 bg-gray-900 text-white w-full">
+          <nav className="flex justify-between h-20  text-black w-full">
             <div className="px-5 xl:px-12 py-6 flex w-full items-center">
               <a className="text-xl font-bold font-heading flex justify-center items-center" href="#">
                 {/* <img className="h-9" src="logo.png" alt="." /> */}

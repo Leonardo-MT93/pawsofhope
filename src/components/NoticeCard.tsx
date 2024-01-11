@@ -4,8 +4,8 @@ import  photo3  from '../images/featuredsection3.jpg'
 
 const NoticeCard = () => {
     return (
-      <div className="flex  flex-col  gap-4">
-          <div className='flex flex-col md:flex-row  gap-4 ' >
+      <div className="flex  flex-col md:items-center  gap-4 ">
+          <div className='flex flex-col md:flex-row  gap-1 mb-4' >
             <img
               src={photo1}
               alt="planet-01"
@@ -16,7 +16,7 @@ const NoticeCard = () => {
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>
-                <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
+                <p className="mt-[4px] md:mt-[16px] font-normal lg:text-[20px] text-[14px]">
                   Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
                 </p>
               </div>
@@ -33,7 +33,7 @@ const NoticeCard = () => {
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>
-                <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
+                <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] ">
                   Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
                 </p>
               </div>
@@ -50,7 +50,7 @@ const NoticeCard = () => {
                 <h4 className="font-normal lg:text-[42px] text-[26px]">
                   Noticia
                 </h4>
-                <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
+                <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] ">
                   Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
                 </p>
               </div>
