@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -8,31 +9,31 @@ const Navbar = () => {
           {/* <!-- navbar --> */}
           <nav className="flex justify-between h-20  text-black w-full">
             <div className="px-5 xl:px-12 py-6 flex w-full items-center">
-              <a className="text-xl font-bold font-heading flex justify-center items-center" href="#">
+              <NavLink className="text-xl font-bold font-heading flex justify-center items-center" to="/">
                 {/* <img className="h-9" src="logo.png" alt="." /> */}
                 Patitas de Esperanza
-              </a>
+              </NavLink>
               {/* <!-- Nav Links --> */}
               <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <NavLink className={({isActive}) => `nav-item nav-link ${isActive ? 'active' : ''}`} to="/biography">
                     Nosotros
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <NavLink className="hover:text-gray-200" to="/bio">
                     Adopta!
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <NavLink className="hover:text-gray-200" to="/">
                     Tienda
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="hover:text-gray-200" href="#">
+                  <NavLink className="hover:text-gray-200" to="/">
                     Nuestras redes
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <div className="hidden xl:flex items-center space-x-5">
