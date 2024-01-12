@@ -8,10 +8,10 @@ const AppRouter = () => {
         <>
             <Route path="/" element={<Home />} />
             <Route path="/biography" element={<Biography />} />
+            <Route  path='/*' element={<Navigate to='/'/>} />
             {/* <Route path="/" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/" element={<Home />} /> */}
-            {/* <Route  path='/*' element={<Navigate to='/'/>} />   */}
         </>
     </Routes>
   )
