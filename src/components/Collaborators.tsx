@@ -98,6 +98,17 @@ export function Collaborators() {
         </CarouselItem>
         </CarouselContent>
       </Carousel>
+      <div className="mt-10 flex flex-col items-center justify-center">
+          <h4 className="text-center font-normal lg:text-[42px] text-[26px]">
+            ¿Te gustaría ser un colaborador?
+          </h4>
+          <a
+            href="#"
+            className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
+            Quiero ser un colaborador!
+          </a>
+        </div>
     </section>
   );
 }

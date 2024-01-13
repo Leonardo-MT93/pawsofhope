@@ -24,6 +24,8 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        'custom-color': 'rgba(254, 234, 248, 0.7)',
+        'custom-border': 'rgba(212, 153, 185, 0.25)',
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -74,6 +76,12 @@ module.exports = {
       },
       mixBlendMode: {
         'color-burn': 'color-burn',
+      },
+      boxShadow: {
+        'custom-shadow': '0 4px 30px rgba(0, 0, 0, 0.1)',
+      },
+      backdropBlur: {
+        'custom-blur': '10px',
       },
     },
     variants:{
