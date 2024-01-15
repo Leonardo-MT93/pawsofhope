@@ -5,7 +5,7 @@ import Notices from "@/components/Notices";
 const Home = () => {
   return (
     <>
-      <main className="flex items-center flex-col text-dark w-full min-h-screen">
+      <main className="flex items-center flex-col w-full min-h-screen">
         <CarouselHomepage/>
         <Notices/>
         <Collaborators/>
