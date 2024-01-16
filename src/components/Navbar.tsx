@@ -134,11 +134,11 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                 </ul>
-                <div className="flex items-center">
+                <NavLink to="/donations" className="flex items-center" onClick={closeModal}>
                   <Button className=" mt-4 bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-                    Iniciar Sesion
+                    Hacer una donación
                   </Button>
-                </div>
+                </NavLink>
               </nav>
             </div>
           )}
