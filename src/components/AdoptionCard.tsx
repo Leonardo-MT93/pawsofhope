@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 
 interface AdoptionCardProps {
   id: string;
@@ -19,6 +18,13 @@ const AdoptionCard = ({
   status,
   characteristics,
 }: AdoptionCardProps) => {
+
+  const handleAdoptionClick = () => {
+    console.log("Animal adoptado: " + id);
+  };
+
+
+
   return (
     <div className="w-full sm:w-[400px]  md:w-[300px] h-[600px] flex flex-col items-center justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className=" w-full sm:w-[400px]  md:w-[300px] h-[240px] overflow-hidden">
@@ -51,18 +57,17 @@ const AdoptionCard = ({
           </p>
         </div>
         <div className="w-full flex justify-evenly ">
-        <NavLink
-          to='/'
+        <button
           className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-md font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          onClick={handleAdoptionClick}
         >
           Quiero Adoptar
-        </NavLink>
-        <NavLink
-          to='/'
+        </button>
+        <button
           className="bg-blue-400 text-gray-900 hover:bg-yellow-300 py-2 px-4 rounded-full text-md  font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           Quiero dar tránsito
-        </NavLink>
+        </button>
         </div>
         
       </div>
