@@ -47,11 +47,11 @@ const Navbar = () => {
                   Nosotros
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink className="hover:text-gray-200" to="/donations" >
                   Donaciones
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink className="hover:text-gray-200" to="/adoption">
                   Adopta!
@@ -112,7 +112,7 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       className="relative group text-xl text-black my-2" onClick={closeModal}
-                      to="/bio"
+                      to="/adoption"
                     >
                       Adopta!
                     </NavLink>
