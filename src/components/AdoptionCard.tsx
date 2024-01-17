@@ -5,29 +5,66 @@ interface AdoptionCardProps {
   name: string;
   image: string;
   description: string;
+  size: string;
+  status: string;
+  characteristics: string[];
 }
 
-const AdoptionCard = ({ id, name, image, description }: AdoptionCardProps) => {
+const AdoptionCard = ({
+  id,
+  name,
+  image,
+  description,
+  size,
+  status,
+  characteristics,
+}: AdoptionCardProps) => {
   return (
-    <div className="w-full sm:w-[400px]  md:w-[300px] h-[450px] flex flex-col items-center justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full sm:w-[400px]  md:w-[300px] h-[600px] flex flex-col items-center justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className=" w-full sm:w-[400px]  md:w-[300px] h-[240px] overflow-hidden">
-        <img className="w-full h-full rounded-t-lg object-fill" src={image} alt="" />
+        <img
+          className="w-full h-full rounded-t-lg object-fill"
+          src={image}
+          alt=""
+        />
       </div>
-      <div className="p-5 flex flex-col items-center justify-center">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {name}
-          </h5>
-        </a>
-        <p className=" h-[60px] mb-3 font-normal text-sm text-gray-700 dark:text-gray-400 text-ellipsis ">
-          {description}
-        </p>
+      <div className="w-full h-[360px] flex flex-col items-center justify-around border border-black">
+        <h5 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 underline">
+          {name}
+        </h5>
+        <div className="flex flex-col items-center justify-between h-[200px]">
+          <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+            {status}
+          </h4>
+          <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+            Tamaño: {size}
+          </h4>
+          <h4 className="">
+            {characteristics.map((characteristic, index) => (
+              <span key={index} className="bg-orange-400 border border-black text-white p-2 mx-1 rounded-3xl font-bold">
+                {characteristic}
+              </span>
+            ))}
+          </h4>
+          <p className="p-1 h-[60px] my-3 font-normal text-sm text-gray-700 dark:text-gray-400 text-ellipsis text-center">
+            {description}
+          </p>
+        </div>
+        <div className="w-full flex justify-evenly ">
         <NavLink
-            to={`/adoption/${id}`}
-          className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          to='/'
+          className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-md font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
-          Ver más
+          Quiero Adoptar
         </NavLink>
+        <NavLink
+          to='/'
+          className="bg-blue-400 text-gray-900 hover:bg-yellow-300 py-2 px-4 rounded-full text-md  font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+        >
+          Quiero dar tránsito
+        </NavLink>
+        </div>
+        
       </div>
     </div>
   );
