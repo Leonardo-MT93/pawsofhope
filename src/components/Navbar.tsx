@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import logo from '../images/logo-responsive.png'
+import logo from '../images/new.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,24 +14,22 @@ const Navbar = () => {
     setIsOpen(false);
   }
   return (
-    <div className="flex  flex-wrap place-items-center h-20">
-      <section className="relative mx-auto w-full h-20">
+    <div className="flex  flex-wrap place-items-center h-24">
+      <section className="flex relative mx-auto w-full h-24 border-b border-black border-opacity-50">
         {/* <!-- navbar --> */}
         <nav className="flex justify-between   text-black w-full">
-          <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between ">
+          <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between border">
             <NavLink
-              className="text-xl font-bold font-heading flex justify-center items-center"
+              className=" h-24 flex items-center"
               to="/"
             >
-              <img className="h-9" src={logo} alt="." />
+              <img className="h-20" src={logo} alt="Logo de la pagina web Patitas de Esperanza" />
             </NavLink>
             {/* <!-- Nav Links --> */}
             <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `nav-item nav-link ${isActive ? "active" : ""}`
-                  }
+                  className="hover:border-b-2 hover:border-black"
                   to="/"
                 >
                   Inicio
@@ -39,27 +37,26 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) =>
-                    `nav-item nav-link ${isActive ? "active" : ""}`
-                  }
+                  className="hover:border-b-2 hover:border-black"
                   to="/biography"
                 >
                   Nosotros
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink className="hover:text-gray-200" to="/donations" >
-                  Donaciones
-                </NavLink>
-              </li> */}
+             
               <li>
-                <NavLink className="hover:text-gray-200" to="/adoption">
+                <NavLink className=" hover:border-b-2 hover:border-black" to="/adoption">
                   Adopta!
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:text-gray-200" to="/store">
+                <NavLink className="hover:border-b-2 hover:border-black" to="/store">
                   Tienda
+                </NavLink>
+              </li>
+               <li>
+                <NavLink className="hover:border-b-2 hover:border-black" to="/contact" >
+                  Nuestras redes
                 </NavLink>
               </li>
             </ul>
@@ -120,7 +117,7 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       className="relative group text-xl text-black my-2" onClick={closeModal}
-                      to="/"
+                      to="/store"
                     >
                       Tienda
                     </NavLink>
@@ -128,7 +125,7 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       className="relative group text-xl text-black my-2" onClick={closeModal}
-                      to="/"
+                      to="/contact"
                     >
                       Nuestras redes
                     </NavLink>

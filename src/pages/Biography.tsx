@@ -28,36 +28,34 @@ const Biography = () => {
   ];
 
   return (
-    <main className="flex items-center flex-col w-full min-h-screen">
-      <section className="w-full relative sm:p-16 xs:p-8 px-4 py-4">
-        <h2 className="mb-[30px] text-4xl md:text-5xl text-center">
-          ¿Quienes somos?
-        </h2>
-        <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
-          <div className=" flex flex-col gap-4">
-            {notices.map((item) => (
-              <NoticeCard
-                description={item.description}
-                notice={item.title}
-                photo={item.photo}
-                key={item.id}
-              />
-            ))}
-          </div>
+    <section className="flex items-center flex-col w-full min-h-screen relative px-4">
+      <h2 className="w-full my-10 text-4xl md:text-5xl text-center">
+        ¿Quienes somos?
+      </h2>
+      <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
+        <div className=" flex flex-col gap-4">
+          {notices.map((item) => (
+            <NoticeCard
+              description={item.description}
+              notice={item.title}
+              photo={item.photo}
+              key={item.id}
+            />
+          ))}
         </div>
-        <div className="m-4 flex flex-col items-center justify-center">
-          <h4 className="text-center font-normal lg:text-[42px] text-[26px]">
-            ¿Te gustaría formar parte?
-          </h4>
-          <a
-            href="#"
-            className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-          >
-            Quiero ser parte!
-          </a>
-        </div>
-      </section>
-    </main>
+      </div>
+      <div className="m-4 flex flex-col items-center justify-center pb-4">
+        <h4 className="m-10 text-4xl md:text-5xl text-center">
+          ¿Te gustaría formar parte?
+        </h4>
+        <a
+          href="#"
+          className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+        >
+          Quiero ser parte!
+        </a>
+      </div>
+    </section>
   );
 };
 

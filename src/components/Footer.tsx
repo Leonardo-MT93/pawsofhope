@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 // import Layout from "./Layout"
 const Footer = () => {
   return (
-    <footer className='w-full border-t-2 border-solid border-dark
+    <footer className='w-full border-t border-opacity-50 border-black
     font-medium lg:text-lg sm:text-base '>
         <div className="w-full flex flex-col items-center justify-center py-10 md:flex-row md:justify-evenly">
             <span>{new Date().getFullYear()} &copy; Todos los derechos reservados</span>

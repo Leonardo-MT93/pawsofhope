@@ -7,7 +7,7 @@ interface NoticeCardProps {
 
 const NoticeCard = ({photo, notice, description}: NoticeCardProps) => {
     return (
-      <div className="flex  flex-col md:items-center  gap-4 ">
+      <div className="flex  flex-col md:items-center  gap-4">
           <div className='flex flex-col md:flex-row  gap-1 mb-4' >
             <img
               src={photo}
@@ -16,10 +16,10 @@ const NoticeCard = ({photo, notice, description}: NoticeCardProps) => {
             />
             <div className="w-full flex justify-between items-center">
               <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px] justify-between items-center">
-                <h4 className="font-normal lg:text-[42px] text-[26px]">
+                <h3 className="w-full text-3xl md:text-4xl text-balance">
                   {notice}
-                </h4>
-                <p className=" mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-gray-900  ">
+                </h3>
+                <p className=" mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-gray-900 text-pretty ">
                   {description}
                 </p>
               </div>

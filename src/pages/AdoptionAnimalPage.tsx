@@ -13,11 +13,11 @@ const AdoptionAnimalPage = () => {
   return (
     <>
       <main className="w-full min-h-screen">
-        <section className="w-full min-h-screen relative sm:p-16 xs:p-8 px-4 py-4 border border-red-500">
+        <section className="w-full min-h-screen relative sm:p-16 xs:p-8 px-4 py-4">
           <h2 className="mb-[30px] text-4xl md:text-5xl text-center">
             Animales en adopción
           </h2>
-          <div className="w-full h-[500px] flex items-center justify-center border border-blue-500">
+          <div className="w-full h-[500px] flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-center ">
               <div className=" w-[400px] h-[400px] overflow-hidden">
                 <img
@@ -26,7 +26,7 @@ const AdoptionAnimalPage = () => {
                   alt=""
                 />
               </div>
-              <div className="w-[600px] h-[400px] p-5 flex flex-col justify-around border border-black">
+              <div className="w-[600px] h-[400px] p-5 flex flex-col justify-around">
                 <h3 className="text-center mb-2 text-4xl font-bold tracking-tight text-gray-900 ">
                   {animal.name}
                 </h3>

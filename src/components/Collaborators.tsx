@@ -4,111 +4,158 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-
-import brand1 from '../images/brands1.jpeg'
-import brand2 from '../images/brands2.jpeg'
-import brand3 from '../images/brands3.png'
+import colaborator0 from "../images/colaborator0.png";
+import colaborator1 from "../images/colaborator1.png";
+import colaborator2 from "../images/colaborator2.png";
+import colaborator3 from "../images/colaborator3.png";
+import colaborator4 from "../images/colaborator4.png";
+import colaborator5 from "../images/colaborator5.png";
+import colaborator6 from "../images/colaborator6.png";
+import colaborator7 from "../images/colaborator7.png";
+import colaborator8 from "../images/colaborator8.png";
 import { Link } from "react-router-dom";
+import Autoplay from "embla-carousel-autoplay";
 
 export function Collaborators() {
-
   return (
-    <section className="w-full relative z-10 sm:p-16 xs:p-8 px-6 py-12"> 
-          <h2 className="mb-[20px] text-4xl md:text-5xl text-center">Colaboradores</h2>
-      <Carousel className="w-full">
+    <section className="w-full relative px-4">
+      <h2 className="w-full my-10 text-4xl md:text-5xl text-center">
+        Colaboradores
+      </h2>
+      <Carousel className="w-full "  plugins={[Autoplay({ delay: 4000 })]}>
         <CarouselContent className="-ml-1">
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <Link to='https://www.google.com'>
-                    <img src={brand1} alt='something' className=" w-full filter grayscale object-contain"/>
-                    </Link>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand2} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand1} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand3} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand1} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden  ">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand2} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
-        <CarouselItem
-              className="pl-1 sm:basis-1/3 lg:basis-1/6"
-            >
-              <div className="p-1 flex justify-center">
-                <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
-                  <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                    <img src={brand3} alt='something' className=" w-full filter grayscale object-contain"/>
-                  </CardContent>
-                </Card>
-              </div>
-        </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link to="https://www.google.com">
+                    <img
+                      src={colaborator0}
+                      alt="something"
+                      className=" w-full filter grayscale object-contain"
+                    />
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator1}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator2}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator3}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator4}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden  ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator5}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator6}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator7}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <img
+                    src={colaborator8}
+                    alt="something"
+                    className=" w-full filter grayscale object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
         </CarouselContent>
       </Carousel>
-      <div className="mt-10 flex flex-col items-center justify-center">
-          <h4 className="text-center font-normal lg:text-[42px] text-[26px]">
-            ¿Te gustaría ser un colaborador?
-          </h4>
-          <a
-            href="#"
-            className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-          >
-            Quiero ser un colaborador!
-          </a>
-        </div>
+      <div className="m-4 flex flex-col items-center justify-center pb-4">
+        <h4 className="w-full my-10 text-4xl md:text-5xl text-center">
+          ¿Te gustaría ser un colaborador?
+        </h4>
+        <a
+          href="#"
+          className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+        >
+          Quiero ser un colaborador!
+        </a>
+      </div>
     </section>
   );
 }
