@@ -17,7 +17,7 @@ const DonationForm = () => {
       <Formik
         initialValues={{
           name: "",
-          donation: 0.00,
+          donation: 0,
           user_message: "",
         }}
         validate={(valores)=>{
@@ -83,7 +83,9 @@ const DonationForm = () => {
                   Monto a donar
                 </label>
                 <Field
+
                   type="number"
+                  min='0'
                   className="w-full flex h-10 md:h-14 md:text-xl border rounded-2xl px-5 border-black "
                   id="tittle"
                   name="donation"

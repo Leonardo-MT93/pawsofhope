@@ -16,8 +16,6 @@ const AdoptionPage = () => {
             name={animal.name}
             image={animal.image}
             description={animal.description}
-            size={animal.size}
-            status={animal.status}
             characteristics={animal.characteristics}
           />
         ))}

@@ -15,9 +15,9 @@ const Navbar = () => {
   }
   return (
     <div className="flex  flex-wrap place-items-center h-24">
-      <section className="flex relative mx-auto w-full h-24 border-b border-black border-opacity-50">
+      <section className="flex relative mx-auto w-full h-24 ">
         {/* <!-- navbar --> */}
-        <nav className="flex justify-between   text-black w-full">
+        <nav className="flex justify-between border border-b-pink-400   text-black w-full">
           <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between border">
             <NavLink
               className=" h-24 flex items-center"
@@ -26,10 +26,10 @@ const Navbar = () => {
               <img className="h-20" src={logo} alt="Logo de la pagina web Patitas de Esperanza" />
             </NavLink>
             {/* <!-- Nav Links --> */}
-            <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+            <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-6 lg:space-x-12">
               <li>
                 <NavLink
-                  className="hover:border-b-2 hover:border-black"
+                  className="hover:border-b-2 hover:border-black md:text-sm lg:text-lg"
                   to="/"
                 >
                   Inicio
@@ -37,7 +37,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className="hover:border-b-2 hover:border-black"
+                  className="hover:border-b-2 hover:border-black md:text-sm lg:text-lg"
                   to="/biography"
                 >
                   Nosotros
@@ -45,17 +45,17 @@ const Navbar = () => {
               </li>
              
               <li>
-                <NavLink className=" hover:border-b-2 hover:border-black" to="/adoption">
+                <NavLink className=" hover:border-b-2 hover:border-black md:text-sm lg:text-lg " to="/adoption">
                   Adopta!
                 </NavLink>
               </li>
               <li>
-                <NavLink className="hover:border-b-2 hover:border-black" to="/store">
-                  Tienda
+                <NavLink className="hover:border-b-2 hover:border-black md:text-sm lg:text-lg" to="/announcements">
+                  Novedades
                 </NavLink>
               </li>
                <li>
-                <NavLink className="hover:border-b-2 hover:border-black" to="/contact" >
+                <NavLink className="hover:border-b-2 hover:border-black md:text-sm lg:text-lg" to="/contact" >
                   Nuestras redes
                 </NavLink>
               </li>
@@ -117,9 +117,9 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       className="relative group text-xl text-black my-2" onClick={closeModal}
-                      to="/store"
+                      to="/announcements"
                     >
-                      Tienda
+                      Novedades
                     </NavLink>
                   </li>
                   <li>

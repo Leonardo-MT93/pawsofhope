@@ -8,11 +8,12 @@ import carousel1 from "../images/carouselimage1.jpg";
 import carousel2 from "../images/carouselimage2.jpg";
 import carousel3 from "../images/carouselimage3.jpg";
 import Autoplay  from "embla-carousel-autoplay";
+import { NavLink } from "react-router-dom";
 
 const CarouselHomepage = () => {
   
   return (
-    <div className="w-full flex justify-center  md:p-0 md:mt-4 overflow-hidden">
+    <div className="w-full flex justify-center  md:p-0  overflow-hidden">
       <Carousel className="w-full cursor-grab select-none" plugins={[Autoplay({delay:4000,}),]}>
         <CarouselContent>
           <CarouselItem>
@@ -32,15 +33,15 @@ const CarouselHomepage = () => {
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   No compres, adopta!
                 </h1>
-                <p className="text-lg text-gray-300 mb-8">
+                <p className="text-lg text-white mb-8">
                   Los animales no son cosas, son seres vivos y sienten como nosotros. Animate a adoptar!
                 </p>
-                <a
-                  href="#"
+                <NavLink
+                  to="/adoption"
                   className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
                 >
                   Quiero adoptar!
-                </a>
+                </NavLink>
               </div>
             </div>
           </CarouselItem>
@@ -61,15 +62,15 @@ const CarouselHomepage = () => {
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   Ayudanos a seguir rescatando!
                 </h1>
-                <p className="text-lg text-gray-300 mb-8">
+                <p className="text-lg text-white mb-8">
                   Todos los días rescatamos animales en situacion de calle, y necesitamos ayuda de donaciones para poder seguir haciéndolo!
                 </p>
-                <a
-                  href="#"
+                <NavLink
+                  to="/donations"
                   className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
                 >
                   Quiero donar!
-                </a>
+                </NavLink>
               </div>
             </div>
           </CarouselItem>
@@ -86,19 +87,19 @@ const CarouselHomepage = () => {
                 </CardContent>
                 
               </Card>
-              <div className="absolute z-10 flex flex-col justify-center items-center h-full text-center w-full">
+              <div className="w-full absolute z-10 flex flex-col justify-center items-center h-full text-center ">
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   Brinda refugio a un animal!
                 </h1>
-                <p className="text-lg text-gray-300 mb-8">
+                <p className="text-lg text-white mb-8">
                   Si queres ayudar pero no podes adoptar, podés brindar refugio a un animal!
                 </p>
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
                 >
                   Quiero ayudar!
-                </a>
+                </NavLink>
               </div>
             </div>
           </CarouselItem>
