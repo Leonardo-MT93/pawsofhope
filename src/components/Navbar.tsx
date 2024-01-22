@@ -18,7 +18,7 @@ const Navbar = () => {
       <section className="flex relative mx-auto w-full h-24 ">
         {/* <!-- navbar --> */}
         <nav className="flex justify-between border border-b-pink-400   text-black w-full">
-          <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between border">
+          <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between">
             <NavLink
               className=" h-24 flex items-center"
               to="/"
