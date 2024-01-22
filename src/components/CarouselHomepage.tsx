@@ -29,11 +29,11 @@ const CarouselHomepage = () => {
                 </CardContent>
                 
               </Card>
-              <div className="absolute z-10 flex flex-col justify-center items-center h-full text-center w-full">
+              <div className="absolute z-10 flex flex-col justify-center items-center h-full text-center w-full px-6 ">
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   No compres, adopta!
                 </h1>
-                <p className="text-lg text-white mb-8">
+                <p className="mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-white text-pretty">
                   Los animales no son cosas, son seres vivos y sienten como nosotros. Animate a adoptar!
                 </p>
                 <NavLink
@@ -58,11 +58,11 @@ const CarouselHomepage = () => {
                 </CardContent>
                 
               </Card>
-              <div className="absolute z-10 flex flex-col justify-center items-center h-full text-center w-full">
+              <div className="absolute z-10 flex flex-col justify-center items-center h-full text-center w-full px-6">
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   Ayudanos a seguir rescatando!
                 </h1>
-                <p className="text-lg text-white mb-8">
+                <p className="mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-white text-pretty">
                   Todos los días rescatamos animales en situacion de calle, y necesitamos ayuda de donaciones para poder seguir haciéndolo!
                 </p>
                 <NavLink
@@ -87,11 +87,11 @@ const CarouselHomepage = () => {
                 </CardContent>
                 
               </Card>
-              <div className="w-full absolute z-10 flex flex-col justify-center items-center h-full text-center ">
+              <div className="w-full absolute z-10 flex flex-col justify-center items-center h-full text-center px-6">
                 <h1 className="text-5xl font-bold leading-tight mb-4 text-white">
                   Brinda refugio a un animal!
                 </h1>
-                <p className="text-lg text-white mb-8">
+                <p className="w-full mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-white text-pretty">
                   Si queres ayudar pero no podes adoptar, podés brindar refugio a un animal!
                 </p>
                 <NavLink
