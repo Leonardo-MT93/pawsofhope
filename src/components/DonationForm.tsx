@@ -10,13 +10,18 @@ interface Errors {
   user_message?: string;
 }
 
+interface Valores {
+  name: string;
+  donation: number;
+}
+
 const DonationForm = () => {
   const [formEnviado, setFormEnviado] = useState(false);
   const form = useRef(null);
   const [preferenceId, setPreferenceId] = useState(null);
   initMercadoPago('TEST-713237b1-e977-43f3-a67d-89bb13564a55', { locale: "es-AR" });
 
-  const createPreference = async (valores) => {
+  const createPreference = async (valores:Valores) => {
     try {
       const response = await axios.post(
         "http://localhost:5000/create-donation",
