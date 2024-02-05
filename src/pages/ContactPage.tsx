@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ContactPage = () => {
   return (
-    <section className="flex flex-col items-center w-full min-h-screen px-2 sm:px-6">
+    <section className="flex flex-col items-center w-full h-full px-2 sm:px-6">
       <h2 className="my-10 text-4xl md:text-5xl text-center">
         Lista de Refugios
       </h2>

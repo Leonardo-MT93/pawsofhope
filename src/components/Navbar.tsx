@@ -127,7 +127,7 @@ const Navbar = () => {
                       className="relative group text-xl text-black my-2" onClick={closeModal}
                       to="/contact"
                     >
-                      ¿Dóndee estamos?
+                      ¿Dónde estamos?
                     </NavLink>
                   </li>
                 </ul>
