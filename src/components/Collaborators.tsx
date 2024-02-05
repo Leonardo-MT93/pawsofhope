@@ -11,8 +11,6 @@ import colaborator3 from "../images/colaborator3.png";
 import colaborator4 from "../images/colaborator4.png";
 import colaborator5 from "../images/colaborator5.png";
 import colaborator6 from "../images/colaborator6.png";
-import colaborator7 from "../images/colaborator7.png";
-import colaborator8 from "../images/colaborator8.png";
 import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -28,7 +26,7 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <Link to="https://www.google.com">
+                  <Link to="https://www.instagram.com/veterinariatristansuarez/" target="_blank" rel="noopener noreferrer">
                     <img
                       src={colaborator0}
                       alt="something"
@@ -43,11 +41,13 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                <Link to="https://www.instagram.com/forrajeriabeethoven/" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator1}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
                   />
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -56,11 +56,14 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <img
+                <Link target="_blank" rel="noopener noreferrer" to="https://www.google.com/maps/place/El+Trebol/@-34.8562994,-58.5021842,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd6d15768c953:0x5939f70de5800cbf!8m2!3d-34.8562994!4d-58.5021842!16s%2Fg%2F11b7q9kp2f?hl=es&entry=ttu">
+                <img
                     src={colaborator2}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
                   />
+                </Link>
+                  
                 </CardContent>
               </Card>
             </div>
@@ -69,11 +72,14 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <img
+                <Link to="https://www.instagram.com/brezza_petshop/" target="_blank" rel="noopener noreferrer">
+                <img
                     src={colaborator3}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
                   />
+                </Link>
+                  
                 </CardContent>
               </Card>
             </div>
@@ -82,11 +88,14 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link to="https://rodillospaintroller.com.ar/" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator4}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
                   />
+                  </Link>
+                  
                 </CardContent>
               </Card>
             </div>
@@ -95,11 +104,13 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden  ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link to="https://api.whatsapp.com/send?phone=+5401123937902&text=Hola,%20te%20contacto%20desde!%20PorEllosEzeiza%20.%20%F0%9F%92%99" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator5}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
                   />
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -117,44 +128,18 @@ export function Collaborators() {
               </Card>
             </div>
           </CarouselItem>
-          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
-            <div className="p-1 flex justify-center">
-              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
-                <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <img
-                    src={colaborator7}
-                    alt="something"
-                    className=" w-full filter grayscale object-contain"
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
-            <div className="p-1 flex justify-center">
-              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
-                <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <img
-                    src={colaborator8}
-                    alt="something"
-                    className=" w-full filter grayscale object-contain"
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
         </CarouselContent>
       </Carousel>
       <div className="m-4 flex flex-col items-center justify-center pb-4">
         <h4 className="w-full my-10 text-4xl md:text-5xl text-center">
           ¿Te gustaría ser un colaborador?
         </h4>
-        <a
-          href="#"
+        <Link
+          to="https://api.whatsapp.com/send?phone=+5401130045955&text=Hola,%20me%20gustaria%20ser%20un%20colaborador%20de%20PorEllosEzeiza.%20%F0%9F%92%99"
           className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           Quiero ser un colaborador!
-        </a>
+        </Link>
       </div>
     </section>
   );

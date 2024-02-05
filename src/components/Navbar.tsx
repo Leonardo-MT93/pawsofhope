@@ -56,7 +56,7 @@ const Navbar = () => {
               </li>
                <li>
                 <NavLink className="hover:border-b-2 hover:border-black md:text-sm lg:text-lg" to="/contact" >
-                  Nuestras redes
+                  ¿Dónde estamos?
                 </NavLink>
               </li>
             </ul>
@@ -127,7 +127,7 @@ const Navbar = () => {
                       className="relative group text-xl text-black my-2" onClick={closeModal}
                       to="/contact"
                     >
-                      Nuestras redes
+                      ¿Dóndee estamos?
                     </NavLink>
                   </li>
                 </ul>

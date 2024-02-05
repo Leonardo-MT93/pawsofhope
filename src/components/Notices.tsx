@@ -7,30 +7,30 @@ const Notices = () => {
     {
       id: 1,
       photo: photo1,
-      title: "¡Nuevos gatitos en adopción!",
+      title: "¡Estrenamos un nuevo logo!",
       description:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+        "A partir de febrero, estrenamos un nuevo logo en nuestras redes sociales. Este logo representa nuestro compromiso con los animales que rescatamos y nos ayudará a ser reconocidos más fácilmente en todas nuestras redes.",
     },
     {
       id: 2,
       photo: photo2,
-      title: "Cachorrito en busca de una familia",
+      title: "Seguimos con nuestra Feria Americana",
       description:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+        "Como todos los domingos, seguimos con nuestra feria americana para poder recaudar fondos y cubrir todo lo que nos hace falta para poder seguir ayudando día a día a todos los animalitos que rescatamos. ¡Sean bienvenidos a visitarnos y colaborar con nosotros!",
     },
     {
       id: 3,
       photo: photo3,
-      title: "Sigue la recuperación de Roco",
+      title: "Rescatando a un Coni, una nueva integrante de la familia",
       description:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+        "Coni fue rescatada de un arroyo en condiciones horribles. Sus patitas estaban atadas, una de ellas estaba quebrada y estaba totalmente desnutrida. Actualmente se está recuperando y, según el diagnóstico de los veterinarios, le detectaron una falla renal.",
     },
   ];
   return (
-    <section className="w-full relative sm:p-16 xs:p-8 px-4 py-4">
+    <section className="w-full relative sm:p-16 xs:p-8 px-4 py-4 ">
       <h2 className="mb-[30px] text-4xl md:text-5xl text-center">Novedades</h2>
-      <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
-        <div className=" flex flex-col gap-[30px]">
+      <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col">
+        <div className=" flex flex-col gap-[30px] ">
           {notices.map((item) => (
             <NoticeCard
               description={item.description}

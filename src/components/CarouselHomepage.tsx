@@ -18,7 +18,7 @@ const CarouselHomepage = () => {
         <CarouselContent>
           <CarouselItem>
             <div className="w-full  flex items-center justify-center">
-              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:rounded-xl overflow-hidden">
+              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:rounded-b-xl md:rounded-t-none overflow-hidden">
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel1}
@@ -47,7 +47,7 @@ const CarouselHomepage = () => {
           </CarouselItem>
           <CarouselItem>
             <div className="w-full  flex items-center justify-center">
-              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:rounded-xl overflow-hidden">
+              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:md:rounded-b-xl md:rounded-t-none overflow-hidden">
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel2}
@@ -76,7 +76,7 @@ const CarouselHomepage = () => {
           </CarouselItem>
           <CarouselItem>
             <div className="w-full  flex items-center justify-center">
-              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:rounded-xl overflow-hidden">
+              <Card className="flex relative w-full h-[80vh] md:h-[80vh] rounded-sm md:md:rounded-b-xl md:rounded-t-none overflow-hidden">
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel3}

@@ -27,7 +27,7 @@ const AdoptionCard = ({
   return (
     <div className="w-full sm:w-[400px]  md:w-[350px] xl:w-[400px] h-[500px] flex flex-col relative  overflow-hidden rounded-lg shadow transition hover:shadow-lg">
       <img
-        alt="Office"
+        alt={`${name} animal en adopcion`}
         src={image}
         className="absolute inset-0 h-full w-full object-cover"
       />
