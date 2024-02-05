@@ -43,7 +43,7 @@ export const animals: Animal[] = [
     },
     {
       "id": "200",
-      "name": "Cahorros de Moana 💞",
+      "name": "Cachorros de Moana 💞",
       "image": adoption4,
       "description": "Ellos son los cachorros de Moana. Son muy curiosos y les encanta explorar su entorno. Son cachorros mestizos de pastor belga.",
       "characteristics": ["2 Meses", "activos", "juguetones"]
