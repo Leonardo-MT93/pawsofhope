@@ -32,7 +32,7 @@ export const animals: Animal[] = [
       "name": "Skay 💜",
       "image": adoption2,
       "description": "Skay es un perrita rescatada del maltrato. Le gusta descansar al sol, jugar y es de tamaño mediana.",
-      "characteristics": ["valiente"]
+      "characteristics": ["1 año", "valiente"]
     },
     {
       "id": "103",
