@@ -1,8 +1,9 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useRef, useState } from "react";
 import { Button } from "./ui/button";
-import { Wallet, initMercadoPago } from "@mercadopago/sdk-react";
+import { initMercadoPago } from "@mercadopago/sdk-react";
 import axios from "axios";
+import { redirect } from "react-router-dom";
 
 interface Errors {
   name?: string;
@@ -31,8 +32,12 @@ const DonationForm = () => {
           price: valores.donation,
         }
       );
-      const { id } = response.data;
-      return id;
+      // const { id } = response.data;
+        
+      // return id;
+
+      const {url} = response.data;
+      return url;
     } catch (error) {
       console.log("Error en el frontend", error);
     }
@@ -69,12 +74,15 @@ const DonationForm = () => {
         }}
         onSubmit={async(valores, { resetForm }) => {
           resetForm();
-          console.log(valores)
           setFormEnviado(true);
-          const id = await createPreference(valores);
-        if(id){
-        setPreferenceId(id);
-    } 
+          // const id = await createPreference(valores);
+          // console.log(id)
+    //     if(id){
+    //     setPreferenceId(id);
+    // } 
+          const url = await createPreference(valores);
+          window.location.replace(url)
+          redirect(url)
           setTimeout(() => {
             setFormEnviado(false);
           }, 3000);
@@ -162,7 +170,7 @@ const DonationForm = () => {
               <Button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black" size={"lg"}>
                 Realizar donación
               </Button>
-              {preferenceId && <Wallet initialization={{ preferenceId: preferenceId }} /> }
+              {/* {preferenceId && <Wallet initialization={{ preferenceId: preferenceId }} /> } */}
               </div>
               {formEnviado && (
                 <p className="flex justify-start text-green-500 font-bold text-sm pt-4">

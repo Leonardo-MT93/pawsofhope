@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { foundationsAdresses } from "@/constants/FoundationsAddresses";
+import AddressCard from "@/components/AddressCard";
 
 const ContactPage = () => {
   return (
@@ -7,7 +8,19 @@ const ContactPage = () => {
         Lista de Refugios
       </h2>
       <section className="w-full h-full md:w-[95%] xl:w-[85%] relative flex flex-col items-center justify-center">
-        <div className="w-full flex flex-col md:flex-row items-center justify-around border rounded-xl border-pink-500 my-4 p-2">
+        {foundationsAdresses.map((address) => (
+            <AddressCard
+              key={address.id}
+              id={address.id}
+              name={address.name}
+              address={address.address}
+              schedule={address.schedule}
+              link={address.link}
+              contact={address.contact}
+              map={address.map}
+            />
+        ))}
+        {/* <div className="w-full flex flex-col md:flex-row items-center justify-around border rounded-xl border-pink-500 my-4 p-2">
           <div className="flex flex-col items-center justify-center w-full h-full md:w-[50%] md:h-[300px] xl:h-[400px] ">
             <h2 className="text-lg sm:text-3xl text-balance border border-b-black">Nuestra Feria Americana</h2>
             <h3 className="text-sm sm:text-2xl text-pretty">Los Cedros 581, La Unión, Ezeiza</h3>
@@ -45,7 +58,7 @@ const ContactPage = () => {
           <div className="w-full md:w-[40%] md:h-[300px] xl:h-[390px]">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.59095338972!2d-58.52309442325531!3d-34.86650407286122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd73aac1f7a15%3A0x15244e3d83202aa1!2sTuyucue%20845%2C%20B1804DMQ%20Ezeiza%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1707068754596!5m2!1ses!2sar" width="100%" height="100%" className="hidden invisible border:0; md:visible md:block" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
-        </div>
+        </div> */}
       </section>
     </section>
   );
