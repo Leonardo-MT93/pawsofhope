@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { initMercadoPago } from "@mercadopago/sdk-react";
 import axios from "axios";
-import { redirect } from "react-router-dom";
 
 interface Errors {
   name?: string;
@@ -19,7 +18,7 @@ interface Valores {
 const DonationForm = () => {
   const [formEnviado, setFormEnviado] = useState(false);
   const form = useRef(null);
-  const [preferenceId, setPreferenceId] = useState(null);
+  // const [preferenceId, setPreferenceId] = useState(null);
   initMercadoPago('TEST-713237b1-e977-43f3-a67d-89bb13564a55', { locale: "es-AR" });
 
   const createPreference = async (valores:Valores) => {
@@ -82,7 +81,6 @@ const DonationForm = () => {
     // } 
           const url = await createPreference(valores);
           window.location.replace(url)
-          redirect(url)
           setTimeout(() => {
             setFormEnviado(false);
           }, 3000);
@@ -174,7 +172,7 @@ const DonationForm = () => {
               </div>
               {formEnviado && (
                 <p className="flex justify-start text-green-500 font-bold text-sm pt-4">
-                  Donación realizada con éxito!
+                  Redireccionando a MercadoPago!
                 </p>
               )}
             </Form>
