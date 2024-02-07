@@ -19,12 +19,12 @@ const DonationForm = () => {
   const [formEnviado, setFormEnviado] = useState(false);
   const form = useRef(null);
   // const [preferenceId, setPreferenceId] = useState(null);
-  initMercadoPago('TEST-713237b1-e977-43f3-a67d-89bb13564a55', { locale: "es-AR" });
+  initMercadoPago('TEST-fe67b8dd-bb29-40c4-b187-3584113adc98', { locale: "es-AR" });
 
   const createPreference = async (valores:Valores) => {
     try {
       const response = await axios.post(
-        "https://pawsofhope.4.us-1.fl0.io/create-donation",
+        "http://localhost:5000/create-donation",
         {
           title: valores.name,
           quantity: 1,
@@ -39,6 +39,7 @@ const DonationForm = () => {
       return url;
     } catch (error) {
       console.log("Error en el frontend", error);
+      throw new Error("Error en el frontend");
     }
   };
 
@@ -74,11 +75,6 @@ const DonationForm = () => {
         onSubmit={async(valores, { resetForm }) => {
           resetForm();
           setFormEnviado(true);
-          // const id = await createPreference(valores);
-          // console.log(id)
-    //     if(id){
-    //     setPreferenceId(id);
-    // } 
           const url = await createPreference(valores);
           window.location.replace(url)
           setTimeout(() => {
