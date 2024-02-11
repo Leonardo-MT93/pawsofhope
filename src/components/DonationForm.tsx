@@ -18,8 +18,8 @@ interface Valores {
 const DonationForm = () => {
   const [formEnviado, setFormEnviado] = useState(false);
   const form = useRef(null);
-  // const [preferenceId, setPreferenceId] = useState(null);
-  initMercadoPago('TEST-fe67b8dd-bb29-40c4-b187-3584113adc98', { locale: "es-AR" });
+  const privateKey: string = import.meta.env.PRIVATE_KEY as string;
+  initMercadoPago(privateKey, { locale: "es-AR" });
 
   const createPreference = async (valores:Valores) => {
     try {
