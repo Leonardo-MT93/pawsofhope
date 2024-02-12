@@ -24,22 +24,18 @@ const DonationForm = () => {
   const createPreference = async (valores:Valores) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/create-donation",
+        "https://porellosezeiza-backend.cyclic.app/create-donation",
         {
           title: valores.name,
           quantity: 1,
           price: valores.donation,
         }
       );
-      // const { id } = response.data;
-        
-      // return id;
 
       const {url} = response.data;
       return url;
     } catch (error) {
-      console.log("Error en el frontend", error);
-      throw new Error("Error en el frontend");
+      throw new Error("Error en el frontend al crear la preferencia");
     }
   };
 
@@ -164,7 +160,6 @@ const DonationForm = () => {
               <Button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black" size={"lg"}>
                 Realizar donación
               </Button>
-              {/* {preferenceId && <Wallet initialization={{ preferenceId: preferenceId }} /> } */}
               </div>
               {formEnviado && (
                 <p className="flex justify-start text-green-500 font-bold text-sm pt-4">
