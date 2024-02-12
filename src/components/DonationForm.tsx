@@ -35,6 +35,7 @@ const DonationForm = () => {
       const {url} = response.data;
       return url;
     } catch (error) {
+      console.log(error)
       throw new Error("Error en el frontend al crear la preferencia");
     }
   };
