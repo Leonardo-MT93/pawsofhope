@@ -38,9 +38,9 @@ const Announcements = () => {
 
   return (
     <section className="flex items-center flex-col w-full min-h-screen relative px-4">
-      <h2 className="w-full my-10 text-4xl md:text-5xl text-center">
+      <h1 className="w-full my-10 text-4xl md:text-5xl text-center font-bold">
         Novedades y noticias
-      </h2>
+      </h1>
       <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
         <div className=" flex flex-col gap-4">
           {announcements.map((item) => (

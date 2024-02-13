@@ -17,9 +17,9 @@ import Autoplay from "embla-carousel-autoplay";
 export function Collaborators() {
   return (
     <section className="w-full relative px-4">
-      <h2 className="w-full my-10 text-4xl md:text-5xl text-center">
+      <h1 className="w-full my-10 text-4xl md:text-5xl text-center font-bold">
         Colaboradores
-      </h2>
+      </h1>
       <Carousel className="w-full "  plugins={[Autoplay({ delay: 4000 })]}>
         <CarouselContent className="-ml-1">
           <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
@@ -31,6 +31,7 @@ export function Collaborators() {
                       src={colaborator0}
                       alt="something"
                       className=" w-full filter grayscale object-contain"
+                      loading="lazy"
                     />
                   </Link>
                 </CardContent>
@@ -46,6 +47,7 @@ export function Collaborators() {
                     src={colaborator1}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                   </Link>
                 </CardContent>
@@ -61,6 +63,7 @@ export function Collaborators() {
                     src={colaborator2}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                 </Link>
                   
@@ -77,6 +80,7 @@ export function Collaborators() {
                     src={colaborator3}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                 </Link>
                   
@@ -93,6 +97,7 @@ export function Collaborators() {
                     src={colaborator4}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                   </Link>
                   
@@ -109,6 +114,7 @@ export function Collaborators() {
                     src={colaborator5}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                   </Link>
                 </CardContent>
@@ -123,6 +129,7 @@ export function Collaborators() {
                     src={colaborator6}
                     alt="something"
                     className=" w-full filter grayscale object-contain"
+                    loading="lazy"
                   />
                 </CardContent>
               </Card>
@@ -131,9 +138,9 @@ export function Collaborators() {
         </CarouselContent>
       </Carousel>
       <div className="m-4 flex flex-col items-center justify-center pb-4">
-        <h4 className="w-full my-10 text-4xl md:text-5xl text-center">
+        <h2 className="w-full my-10 text-4xl md:text-5xl text-center font-bold">
           ¿Te gustaría ser un colaborador?
-        </h4>
+        </h2>
         <Link
           to="https://api.whatsapp.com/send?phone=+5401130045955&text=Hola,%20me%20gustaria%20ser%20un%20colaborador%20de%20PorEllosEzeiza.%20%F0%9F%92%99"
           className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"

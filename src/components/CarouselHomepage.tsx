@@ -24,6 +24,7 @@ const CarouselHomepage = () => {
                     src={carousel1}
                     alt="."
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>
@@ -53,6 +54,7 @@ const CarouselHomepage = () => {
                     src={carousel2}
                     alt="."
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>
@@ -82,6 +84,7 @@ const CarouselHomepage = () => {
                     src={carousel3}
                     alt="."
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>

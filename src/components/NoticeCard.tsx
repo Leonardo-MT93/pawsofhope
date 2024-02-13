@@ -19,9 +19,9 @@ const NoticeCard = ({photo, notice, description}: NoticeCardProps) => {
             
             <div className="w-full md:w-[65%] flex justify-between items-center ">
               <div className="w-full md:ml-[62px] flex flex-col justify-between items-center">
-                <h3 className="w-full text-3xl md:text-4xl text-balance">
+                <h2 className="w-full text-3xl md:text-4xl text-balance">
                   {notice}
-                </h3>
+                </h2>
                 <p className=" mt-[4px] md:mt-[16px] font-normal italic lg:text-[20px] text-[14px] mb-6 text-gray-900 text-pretty ">
                   {description}
                 </p>

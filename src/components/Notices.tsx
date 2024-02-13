@@ -28,7 +28,7 @@ const Notices = () => {
   ];
   return (
     <section className="w-full relative sm:p-16 xs:p-8 px-4 py-4 ">
-      <h2 className="mb-[30px] text-4xl md:text-5xl text-center">Novedades</h2>
+      <h1 className="mb-[30px] text-4xl md:text-5xl text-center font-bold">Novedades</h1>
       <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col">
         <div className=" flex flex-col gap-[30px] ">
           {notices.map((item) => (

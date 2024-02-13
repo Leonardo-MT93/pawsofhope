@@ -5,7 +5,7 @@ const AddressCard = ({name, address, schedule, link, contact, map}: Address) => 
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-around border rounded-xl border-pink-500 my-4 p-2">
       <div className="flex flex-col items-center justify-center w-full h-full md:w-[50%] md:h-[300px] xl:h-[400px] ">
-        <h2 className="text-lg sm:text-3xl text-balance border border-b-black">
+        <h2 className="text-lg sm:text-3xl text-balance border border-b-black font-semibold">
           {name}
         </h2>
         <h3 className="text-sm sm:text-2xl text-pretty">

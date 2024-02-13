@@ -31,9 +31,9 @@ const Biography = () => {
 
   return (
     <section className="flex items-center flex-col w-full min-h-screen relative px-4">
-      <h2 className="w-full my-10 text-4xl md:text-5xl text-center">
-        ¿Quienes somos?
-      </h2>
+      <h1 className="w-full my-10 text-4xl md:text-5xl text-center font-bold">
+        ¿Quiénes somos?
+      </h1>
       <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
         <div className=" flex flex-col gap-4">
           {notices.map((item) => (
@@ -47,9 +47,9 @@ const Biography = () => {
         </div>
       </div>
       <div className="m-4 flex flex-col items-center justify-center pb-4">
-        <h4 className="m-10 text-4xl md:text-5xl text-center">
+        <h2 className="m-10 text-4xl md:text-5xl text-center font-bold">
           ¿Te gustaría formar parte?
-        </h4>
+        </h2>
         <Link
           to="https://api.whatsapp.com/send?phone=+5401130045955&text=Hola,%20me%20gustaria%20formar%20parte%20de%20PorEllosEzeiza.%20%F0%9F%92%99"
           className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"

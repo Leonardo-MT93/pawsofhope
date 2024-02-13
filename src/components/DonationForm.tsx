@@ -158,7 +158,7 @@ const DonationForm = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center mt-2 lg:self-center">
-              <Button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black" size={"lg"}>
+              <Button type="submit" className="mt-4 bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-6 px-10 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" >
                 Realizar donación
               </Button>
               </div>

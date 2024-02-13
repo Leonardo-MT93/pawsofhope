@@ -84,6 +84,9 @@ module.exports = {
       backdropBlur: {
         'custom-blur': '10px',
       },
+      fontFamily: {
+        sans: ["Dekko", "sans-serif"],
+      },
     },
     variants:{
       extend: {
