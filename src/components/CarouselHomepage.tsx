@@ -4,9 +4,9 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import carousel1 from "../images/carouselimage1.jpg";
-import carousel2 from "../images/carouselimage2.jpg";
-import carousel3 from "../images/carouselimage3.jpg";
+import carousel1 from "../img/carouselimage1.avif";
+import carousel2 from "../img/carouselimage2.avif";
+import carousel3 from "../img/carouselimage3.avif";
 import Autoplay  from "embla-carousel-autoplay";
 import { NavLink } from "react-router-dom";
 

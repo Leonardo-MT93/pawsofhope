@@ -1,7 +1,7 @@
 import NoticeCard from "@/components/NoticeCard";
-import photo1 from "../images/biografia1.jpg";
-import photo2 from "../images/biografia2.jpg";
-import photo3 from "../images/biografia3.jpg";
+import photo1 from "../img/biografia1.avif";
+import photo2 from "../img/biografia2.avif";
+import photo3 from "../img/biografia3.avif";
 import { Link } from "react-router-dom";
 
 const Biography = () => {

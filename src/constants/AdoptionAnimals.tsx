@@ -1,8 +1,8 @@
-import adoption0 from '../images/adoption0.jpg'
-import adoption1 from '../images/adoption1.jpg'
-import adoption2 from '../images/adoption2.jpg'
-import adoption3 from '../images/adoption3.jpg'
-import adoption4 from '../images/adoption4.jpg'
+import adoption0 from '../img/adoption0.avif'
+import adoption1 from '../img/adoption1.avif'
+import adoption2 from '../img/adoption2.avif'
+import adoption3 from '../img/adoption3.avif'
+import adoption4 from '../img/adoption4.avif'
 
 interface Animal{
     "id": string,

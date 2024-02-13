@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo1 from "../images/facebook.png";
-import logo2 from "../images/instagram.png";
-import logo3 from "../images/whatsapp.png";
-import logo4 from "../images/tiktok.png";
+import logo1 from "../img/facebook.png";
+import logo2 from "../img/instagram.png";
+import logo3 from "../img/whatsapp.png";
+import logo4 from "../img/tiktok.png";
 
 const Footer = () => {
   return (

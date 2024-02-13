@@ -1,7 +1,7 @@
 import NoticeCard from "./NoticeCard";
-import photo1 from "../images/featuredsection1.jpg";
-import photo2 from "../images/featuredsection2.jpg";
-import photo3 from "../images/featuredsection3.jpg";
+import photo1 from "../img/featuredsection1.avif";
+import photo2 from "../img/featuredsection2.avif";
+import photo3 from "../img/featuredsection3.avif";
 const Notices = () => {
   const notices = [
     {

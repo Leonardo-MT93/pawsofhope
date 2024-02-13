@@ -1,8 +1,8 @@
 import NoticeCard from "@/components/NoticeCard";
-import photo1 from "../images/notices1.jpg";
-import photo2 from "../images/notices2.jpg";
-import photo3 from "../images/notices3.jpg";
-import photo4 from "../images/notices4.jpg";
+import photo1 from "../img/notices1.avif";
+import photo2 from "../img/notices2.avif";
+import photo3 from "../img/notices3.avif";
+import photo4 from "../img/notices4.avif";
 
 const Announcements = () => {
   const announcements = [

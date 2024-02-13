@@ -4,13 +4,13 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import colaborator0 from "../images/colaborator0.png";
-import colaborator1 from "../images/colaborator1.png";
-import colaborator2 from "../images/colaborator2.png";
-import colaborator3 from "../images/colaborator3.png";
-import colaborator4 from "../images/colaborator4.png";
-import colaborator5 from "../images/colaborator5.png";
-import colaborator6 from "../images/colaborator6.png";
+import colaborator0 from "../img/colaborator0.avif";
+import colaborator1 from "../img/colaborator1.avif";
+import colaborator2 from "../img/colaborator2.avif";
+import colaborator3 from "../img/colaborator3.avif";
+import colaborator4 from "../img/colaborator4.avif";
+import colaborator5 from "../img/colaborator5.avif";
+import colaborator6 from "../img/colaborator6.avif";
 import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 
