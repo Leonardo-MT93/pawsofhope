@@ -11,7 +11,7 @@ const Biography = () => {
       photo: photo1,
       title: "Nuestra familia",
       description:
-        "Nuestra familia está compuesta por Rosana, Sabri, Luján, Mariangeles, Miguela y Lorena. Nos unimos con el propósito de ayudar a los animales de la calle. Nos encargamos de rescatar, cuidar, alimentar, conseguir tránsito y dar en adopción a los animales necesitados.",
+        "Nuestra familia está compuesta por Rosana, Micaela, Sabrina, Luján, Mariangeles, Miguela y Lorena. Nos unimos con el propósito de ayudar a los animales de la calle. Nos encargamos de rescatar, cuidar, alimentar, conseguir tránsito y dar en adopción a los animales necesitados.",
     },
     {
       id: 3,
