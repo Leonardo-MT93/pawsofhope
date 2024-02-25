@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Dekko";
+  src:  url("fonts/Dekko.woff") format("woff"),
+        url("fonts/Dekko.ttf") format("truetype");
+  font-display: swap;
+}
+
 #root {
   width: 100%;
   margin: 0 0;

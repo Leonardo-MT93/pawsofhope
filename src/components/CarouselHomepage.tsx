@@ -22,9 +22,8 @@ const CarouselHomepage = () => {
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel1}
-                    alt="."
+                    alt="Imagen de concientizacion sobre la adopción de animales rescatados"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>
@@ -52,9 +51,8 @@ const CarouselHomepage = () => {
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel2}
-                    alt="."
+                    alt="Imagen donde se muestra un perro rescatado"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>
@@ -82,9 +80,8 @@ const CarouselHomepage = () => {
                 <CardContent className="w-full px-0 py-0 absolute inset-0 overflow-hidden ">
                   <img
                     src={carousel3}
-                    alt="."
+                    alt="Imagen donde se encuentra un perro transitado en una casa de familia"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                   />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 </CardContent>

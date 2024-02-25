@@ -16,7 +16,6 @@ const Navbar = () => {
   return (
     <div className="flex  flex-wrap place-items-center h-24">
       <section className="flex relative mx-auto w-full h-24 ">
-        {/* <!-- navbar --> */}
         <nav className="flex justify-between border border-b-pink-400   text-black w-full">
           <div className="px-5 xl:px-12 py-6 flex w-full items-center justify-between">
             <NavLink
@@ -25,7 +24,6 @@ const Navbar = () => {
             >
               <img className="h-20" src={logo} alt="Logo de la pagina web Patitas de Esperanza" />
             </NavLink>
-            {/* <!-- Nav Links --> */}
             <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-6 lg:space-x-12">
               <li>
                 <NavLink

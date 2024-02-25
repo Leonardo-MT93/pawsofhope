@@ -29,7 +29,7 @@ export function Collaborators() {
                   <Link to="https://www.instagram.com/veterinariatristansuarez/" target="_blank" rel="noopener noreferrer">
                     <img
                       src={colaborator0}
-                      alt="something"
+                      alt="Logo de la veterinaria Tristán Suárez"
                       className=" w-full filter grayscale object-contain"
                       loading="lazy"
                     />
@@ -45,7 +45,7 @@ export function Collaborators() {
                 <Link to="https://www.instagram.com/forrajeriabeethoven/" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator1}
-                    alt="something"
+                    alt="Logo de la forrajera Beethoven"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
@@ -61,7 +61,7 @@ export function Collaborators() {
                 <Link target="_blank" rel="noopener noreferrer" to="https://www.google.com/maps/place/El+Trebol/@-34.8562994,-58.5021842,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd6d15768c953:0x5939f70de5800cbf!8m2!3d-34.8562994!4d-58.5021842!16s%2Fg%2F11b7q9kp2f?hl=es&entry=ttu">
                 <img
                     src={colaborator2}
-                    alt="something"
+                    alt="Logo de la veterinaria El Trébol"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
@@ -78,7 +78,7 @@ export function Collaborators() {
                 <Link to="https://www.instagram.com/brezza_petshop/" target="_blank" rel="noopener noreferrer">
                 <img
                     src={colaborator3}
-                    alt="something"
+                    alt="Logo de la veterinaria Brezza Petshop"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
@@ -95,7 +95,7 @@ export function Collaborators() {
                   <Link to="https://rodillospaintroller.com.ar/" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator4}
-                    alt="something"
+                    alt="Logo de Rodillos Paint Roller"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
@@ -112,7 +112,7 @@ export function Collaborators() {
                   <Link to="https://api.whatsapp.com/send?phone=+5401123937902&text=Hola,%20te%20contacto%20desde!%20PorEllosEzeiza%20.%20%F0%9F%92%99" target="_blank" rel="noopener noreferrer">
                   <img
                     src={colaborator5}
-                    alt="something"
+                    alt="Logo de la página Leonify - Desarrollo web"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
@@ -127,7 +127,7 @@ export function Collaborators() {
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
                   <img
                     src={colaborator6}
-                    alt="something"
+                    alt="Imagen con texto de colaboradores de PorEllosEzeiza"
                     className=" w-full filter grayscale object-contain"
                     loading="lazy"
                   />
