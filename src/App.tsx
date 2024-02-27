@@ -3,7 +3,6 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AppRouter from "./routes/AppRouter";
-// import logo from "../src/images/logo-removebg-preview.png";
 
 function App() {
   return (
