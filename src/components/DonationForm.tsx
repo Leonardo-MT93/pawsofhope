@@ -80,8 +80,8 @@ const DonationForm = () => {
         }}
       >
         {({ values, handleBlur }) => (
-          <div className="w-full flex flex-col justify-center items-center min-h-[70vh] px-6 ">
-            <Form className="flex w-full flex-col items-center min-h-screen sm:w-[80%] xl:w-[50%] sm:pt-3 " ref={form} >
+          <div className="w-full flex flex-col justify-center items-center  px-6">
+            <Form className="flex w-full flex-col items-center  sm:w-[80%] xl:w-[50%] sm:pt-3 " ref={form} >
               <div className=" flex w-full flex-col md:w-[85%] ">
                 <label
                   className="w-full flex justify-start text-lg md:text-2xl "
