@@ -11,6 +11,8 @@ import colaborator3 from "../img/colaborator3.avif";
 import colaborator4 from "../img/colaborator4.avif";
 import colaborator5 from "../img/colaborator5.avif";
 import colaborator6 from "../img/colaborator6.avif";
+import colaborator7 from "../img/colaborator7.avif";
+import colaborator8 from "../img/colaborator8.avif";
 import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -20,13 +22,59 @@ export function Collaborators() {
       <h1 className="w-full my-10 text-4xl md:text-5xl text-center font-bold">
         Colaboradores
       </h1>
-      <Carousel className="w-full "  plugins={[Autoplay({ delay: 4000 })]}>
+      <Carousel className="w-full " plugins={[Autoplay({ delay: 4000 })]}>
         <CarouselContent className="-ml-1">
           <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <Link to="https://www.instagram.com/veterinariatristansuarez/" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="https://www.instagram.com/arteydeco.marce/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator7}
+                      alt="Logo de Taller de Arte y Deco"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link
+                    to="https://www.facebook.com/dorimascotas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator6}
+                      alt="Logo de Dori Mascotas"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link
+                    to="https://www.instagram.com/veterinariatristansuarez/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={colaborator0}
                       alt="Logo de la veterinaria Tristán Suárez"
@@ -42,13 +90,17 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                <Link to="https://www.instagram.com/forrajeriabeethoven/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={colaborator1}
-                    alt="Logo de la forrajera Beethoven"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
+                  <Link
+                    to="https://www.instagram.com/forrajeriabeethoven/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator1}
+                      alt="Logo de la forrajera Beethoven"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
                   </Link>
                 </CardContent>
               </Card>
@@ -58,49 +110,58 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                <Link target="_blank" rel="noopener noreferrer" to="https://www.google.com/maps/place/El+Trebol/@-34.8562994,-58.5021842,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd6d15768c953:0x5939f70de5800cbf!8m2!3d-34.8562994!4d-58.5021842!16s%2Fg%2F11b7q9kp2f?hl=es&entry=ttu">
-                <img
-                    src={colaborator2}
-                    alt="Logo de la veterinaria El Trébol"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
-                </Link>
-                  
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
-            <div className="p-1 flex justify-center">
-              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                <Link to="https://www.instagram.com/brezza_petshop/" target="_blank" rel="noopener noreferrer">
-                <img
-                    src={colaborator3}
-                    alt="Logo de la veterinaria Brezza Petshop"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
-                </Link>
-                  
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
-            <div className="p-1 flex justify-center">
-              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
-                <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <Link to="https://rodillospaintroller.com.ar/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={colaborator4}
-                    alt="Logo de Rodillos Paint Roller"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    to="https://www.google.com/maps/place/El+Trebol/@-34.8562994,-58.5021842,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcd6d15768c953:0x5939f70de5800cbf!8m2!3d-34.8562994!4d-58.5021842!16s%2Fg%2F11b7q9kp2f?hl=es&entry=ttu"
+                  >
+                    <img
+                      src={colaborator2}
+                      alt="Logo de la veterinaria El Trébol"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
                   </Link>
-                  
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link
+                    to="https://www.instagram.com/brezza_petshop/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator3}
+                      alt="Logo de la veterinaria Brezza Petshop"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="pl-1 sm:basis-1/3 lg:basis-1/6">
+            <div className="p-1 flex justify-center">
+              <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden ">
+                <CardContent className="p-0 flex items-center justify-center  h-auto ">
+                  <Link
+                    to="https://rodillospaintroller.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator4}
+                      alt="Logo de Rodillos Paint Roller"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -109,13 +170,17 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400 overflow-hidden  ">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <Link to="https://api.whatsapp.com/send?phone=+5401123937902&text=Hola,%20te%20contacto%20desde!%20PorEllosEzeiza%20.%20%F0%9F%92%99" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={colaborator5}
-                    alt="Logo de la página Leonify - Desarrollo web"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
+                  <Link
+                    to="https://api.whatsapp.com/send?phone=+5401123937902&text=Hola,%20te%20contacto%20desde!%20PorEllosEzeiza%20.%20%F0%9F%92%99"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator5}
+                      alt="Logo de la página Leonify - Desarrollo web"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
                   </Link>
                 </CardContent>
               </Card>
@@ -125,12 +190,18 @@ export function Collaborators() {
             <div className="p-1 flex justify-center">
               <Card className="w-[90%] rounded-2xl hover:border hover:border-gray-400   overflow-hidden">
                 <CardContent className="p-0 flex items-center justify-center  h-auto ">
-                  <img
-                    src={colaborator6}
-                    alt="Imagen con texto de colaboradores de PorEllosEzeiza"
-                    className=" w-full filter grayscale object-contain"
-                    loading="lazy"
-                  />
+                  <Link
+                    to="https://www.instagram.com/pets.patitas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={colaborator8}
+                      alt="Logo de Patitas Pet Shop"
+                      className=" w-full filter grayscale object-contain"
+                      loading="lazy"
+                    />
+                  </Link>
                 </CardContent>
               </Card>
             </div>
