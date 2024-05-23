@@ -3,6 +3,7 @@ import adoption1 from '../img/adoption1.avif'
 import adoption2 from '../img/adoption2.avif'
 import adoption3 from '../img/adoption3.avif'
 import adoption4 from '../img/adoption4.avif'
+import adoption5 from '../img/adoption5.avif'
 
 interface Animal{
     "id": string,
@@ -48,5 +49,12 @@ export const animals: Animal[] = [
       "description": "Ellos son los cachorros de Moana. Son muy curiosos y les encanta explorar su entorno. Son cachorros mestizos de pastor belga.",
       "characteristics": ["2 Meses", "activos", "juguetones"]
     },
+    {
+      "id": "201",
+      "name": "VIgo 💙",
+      "image": adoption5,
+      "description": "Es un macho castrado, amigable y fue rescatado de un balcón en donde vivio toda su vida. Es muy chico y se pudo acostumbrar a dormir en una cucha.",
+      "characteristics": ["2 Años", "Amigable"]
+    }
   ];
   
